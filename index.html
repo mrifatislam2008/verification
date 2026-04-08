@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>Developer Verification</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  color:#fff;
+  text-align:center;
+  padding:40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding:20px;
+  border-radius:15px;
+  backdrop-filter: blur(10px);
+}
+
+button {
+  padding:12px 20px;
+  margin:10px;
+  border:none;
+  border-radius:8px;
+  background:#00c6ff;
+  color:#fff;
+  cursor:pointer;
+}
+
+video {
+  width:100%;
+  max-width:320px;
+  border-radius:10px;
+  margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h2>🔐 Developer Verification</h2>
+
+<button onclick="startCamera()">Verify</button>
+<button onclick="startAuto()">Start Auto</button>
+
+<br>
+<video id="video" autoplay playsinline></video>
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
